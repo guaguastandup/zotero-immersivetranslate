@@ -106,5 +106,5 @@ download-failed = 下载失败
 check-network-connection = 检查并更换网络环境
 visit-web-translation-service = 访问网页版翻译服务
 web-translation-service-description = 体验网页版翻译功能
-network-normal-retry-prompt = 检测到网络连接正常 (状态码: { $status })，可能是临时网络问题导致下载失败。 解决方案: 1. 继续等待下载 2. 重试翻译
+network-normal-retry-prompt = 检测到网络连接正常 (状态码: { $status })，可能是临时网络问题导致下载失败。 解决方案: 1. 继续等待下载 2. 重新尝试翻译
 network-issue-prompt = 检测到网络连接问题，当前网络环境可能无法连接到站点。解决方案: 1. { $check_network } 2. 点击链接{ $web_service }:
