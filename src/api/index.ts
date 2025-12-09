@@ -76,9 +76,12 @@ export async function checkInternationalServerHealth(): Promise<{
   success: boolean;
   status?: number;
 }> {
-  const isDev = addon.data.env === "development";
-  const healthCheckUrl = isDev ? HEALTHCHECK_URL_TEST : HEALTHCHECK_URL;
+  // const isDev = addon.data.env === "development";
+  // const healthCheckUrl = isDev ? HEALTHCHECK_URL_TEST : HEALTHCHECK_URL;
 
+  // 测试: 
+  const healthCheckUrl = "http://localhost:8765/health/missing"; // 有ext1字段的情况  
+  // const healthCheckUrl = "http://localhost:8765/health/block";  // 无ext1字段的情况
   try {
     const response = await request({
       url: healthCheckUrl,
